@@ -1,0 +1,5 @@
+node_modules/
+.firebase/
+*-debug.log
+# Jangan commit kunci perkhidmatan (service account)
+serviceAccountKey.json

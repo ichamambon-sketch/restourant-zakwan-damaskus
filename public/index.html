@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selera Nusantara — Restoran</title>
+<meta name="description" content="Restoran dengan masakan segar, suasana selesa dan promosi menarik. Tempah meja anda hari ini.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="container nav">
+    <a href="#utama" class="logo"><span class="mark" id="logoMark">S</span><span data-site="name">Selera Nusantara</span></a>
+    <ul id="menuList">
+      <li><a href="#utama">Utama</a></li>
+      <li id="navPromo"><a href="#promosi">Promosi</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li id="navGallery"><a href="#galeri">Galeri</a></li>
+      <li id="navReviews"><a href="#ulasan">Ulasan</a></li>
+      <li><a href="#hubungi">Hubungi</a></li>
+    </ul>
+    <a href="#hubungi" class="btn btn-gold">Tempah Meja</a>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="utama">
+  <div class="container">
+    <div class="open-pill"><span class="dot" id="openDot"></span><span id="openText">Menyemak waktu operasi…</span></div>
+    <h1 id="heroTitle">Cita rasa <em>autentik</em>, dihidang dengan sepenuh hati</h1>
+    <p id="heroSub">Nikmati hidangan segar yang disediakan setiap hari oleh chef berpengalaman dalam suasana selesa untuk keluarga dan rakan.</p>
+    <div class="actions">
+      <a href="#menu" class="btn btn-gold">Lihat Menu</a>
+      <a href="#hubungi" class="btn btn-ghost">Tempah Meja</a>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</section>
+
+<!-- PROMOTIONS -->
+<section id="promosi">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Tawaran Istimewa</span>
+      <h2 class="title">Promosi Terkini</h2>
+      <p class="lead">Jimat lebih dengan tawaran terhad kami. Kemas kini secara langsung — sentiasa yang terkini.</p>
+    </div>
+    <div class="promo-grid" id="promoGrid"></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Hidangan Kami</span>
+      <h2 class="title">Menu Pilihan</h2>
+      <p class="lead">Dimasak segar setiap hari menggunakan bahan-bahan terbaik.</p>
+    </div>
+    <div class="menu-tools reveal">
+      <div class="tabs" id="tabs"></div>
+      <input class="search" id="search" type="search" placeholder="🔍 Cari hidangan…">
+    </div>
+    <div class="dish-grid" id="dishGrid"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="tentang">
+  <div class="container about">
+    <div class="about-img reveal"><div class="media" id="aboutMedia"></div></div>
+    <div class="reveal">
+      <span class="eyebrow">Tentang Kami</span>
+      <h2 class="title" id="aboutTitle">Kisah di sebalik setiap hidangan</h2>
+      <p class="lead" id="aboutText" style="max-width:none"></p>
+      <div class="features">
+        <div class="feat"><div class="ic">🌿</div><div><b>Bahan Segar</b><span>Dipilih setiap pagi daripada pembekal tempatan dipercayai.</span></div></div>
+        <div class="feat"><div class="ic">👨‍🍳</div><div><b>Chef Berpengalaman</b><span>Resipi turun-temurun dengan sentuhan moden.</span></div></div>
+        <div class="feat"><div class="ic">🏡</div><div><b>Suasana Selesa</b><span>Sesuai untuk makan keluarga, majlis dan pertemuan perniagaan.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="galeri">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Galeri</span>
+      <h2 class="title">Suasana &amp; Hidangan</h2>
+    </div>
+    <div class="gallery" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="ulasan">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Testimoni</span>
+      <h2 class="title">Kata Pelanggan Kami</h2>
+    </div>
+    <div class="rev-grid" id="revGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="hubungi">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Hubungi Kami</span>
+      <h2 class="title">Tempah Meja Anda</h2>
+      <p class="lead">Isi borang di bawah dan kami akan mengesahkan tempahan anda melalui WhatsApp.</p>
+    </div>
+    <div class="contact">
+      <div class="panel reveal">
+        <h3>Borang Tempahan</h3>
+        <form id="resForm">
+          <div><label for="fName">Nama</label><input id="fName" name="nama" required placeholder="Nama penuh"></div>
+          <div><label for="fPhone">No. Telefon</label><input id="fPhone" name="telefon" type="tel" required placeholder="01x-xxxxxxx"></div>
+          <div><label for="fDate">Tarikh</label><input id="fDate" name="tarikh" type="date" required></div>
+          <div><label for="fTime">Masa</label><input id="fTime" name="masa" type="time" required value="19:00"></div>
+          <div class="full"><label for="fPax">Bilangan Orang</label>
+            <select id="fPax" name="pax"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>8</option><option>10</option><option>12</option><option>15</option><option>20</option></select></div>
+          <div class="full"><label for="fNote">Nota (pilihan)</label><textarea id="fNote" name="nota" placeholder="Contoh: sambutan hari jadi, kerusi bayi…"></textarea></div>
+          <div class="full"><button class="btn btn-gold" type="submit" style="width:100%">Hantar Tempahan</button></div>
+        </form>
+      </div>
+      <div class="panel reveal">
+        <h3>Maklumat Restoran</h3>
+        <div class="info-list">
+          <div class="info"><div class="ic">📍</div><div><b>Alamat</b><span id="addr"></span></div></div>
+          <div class="info"><div class="ic">📞</div><div><b>Telefon</b><a id="phoneLink" href="#"></a></div></div>
+          <div class="info"><div class="ic">✉️</div><div><b>Emel</b><a id="mailLink" href="#"></a></div></div>
+          <div class="info"><div class="ic">🕒</div><div><b>Waktu Operasi</b><span id="hoursList"></span></div></div>
+        </div>
+        <div class="map"><iframe id="mapFrame" title="Peta lokasi" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-top">
+      <div class="logo"><span class="mark" id="logoMark2">S</span><span data-site="name">Selera Nusantara</span></div>
+      <div class="socials" id="socials"></div>
+    </div>
+    <p class="copy">© <span id="year"></span> <span data-site="name">Selera Nusantara</span>. Hak cipta terpelihara.
+      <span class="live"><span class="dot" id="liveDot"></span><span id="liveText">Mod demo</span></span></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox"><img alt=""></div>
+<div class="toast" id="toast"></div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
